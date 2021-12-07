@@ -1,8 +1,18 @@
 <?php
-    // Food array
+    /**
+    *Few demo Arrays for using in the practice time. 
+    */
+
+    /*/**
+     * food Array
+     * An example of index array
+     */
     $food   =   ['Potato','Carrot','Cabbage','Radish','Chilli','Tomato'];
 
-    // Location Array
+    /**
+     * Location Array
+     * An Example of an Organized Array
+     */
     $location   =   [
         'Mirpur',
         'Azimpur',
@@ -12,7 +22,10 @@
         'Gazipur'
     ];
 
-    // Name Array
+    /**
+     * Name Array
+     * An Example of Index Array
+     */
     $name   =   [
         'Asraful Hoque',
         'Nahiyan Khandokar',
@@ -23,7 +36,10 @@
         'Sabbir Khan'
     ];
 
-    // Customer Array
+    /**
+     * Customers Array
+     * An example of multi-dimentional array
+     */
     $customers  =   [
         'Asraful Hoque' =>  [
             'name'  =>   'Asraful Hoque',
