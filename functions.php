@@ -90,6 +90,44 @@
     };
 
 
+    function getGrade($marks){
+        switch ($marks){
+            case $marks >=0 && $marks <=32:
+            $grade  = 'F';
+            break;
+
+            case $marks >=33 && $marks <=39:
+            $grade  = 'D';
+            break;
+
+            case $marks >=40 && $marks <=49:
+            $grade  = 'C';
+            break;
+
+            case $marks >=50 && $marks <=59:
+            $grade  = 'B';
+            break;
+
+            case $marks >=60 && $marks <=69:
+            $grade  = 'A-';
+            break;
+
+            case $marks >=70 && $marks <=79:
+            $grade  = 'A';
+            break;
+
+            case $marks >=80 && $marks <=100:
+            $grade  = 'A+';
+            break;
+
+            default:
+            $grade  = 'Invalid Number!';
+            break;
+        };
+        echo $grade;
+    }
+
+
 
     
 

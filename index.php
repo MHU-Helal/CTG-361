@@ -39,6 +39,9 @@ banglaHeadline('This is a Bangla Headline Function!', 'nil');
 //Testing GPA function
 // getGpa(99);
 
+//Testing Grade function
+// getGrade(79);
+
 
 
 
