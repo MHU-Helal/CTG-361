@@ -36,6 +36,9 @@ headline('Headline Function', 'h1', 'center', 'uppercase', '#f0f');
 // Testing banglaHeadline function
 banglaHeadline('This is a Bangla Headline Function!', 'nil');
 
+//Testing GPA function
+// getGpa(99);
+
 
 
 
