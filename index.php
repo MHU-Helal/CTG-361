@@ -43,7 +43,11 @@ banglaHeadline('This is a Bangla Headline Function!', 'nil');
 // getGrade(79);
 
 
-
+foreach ($customers as $people){
+    echo "Name: " . "<b style='color:aqua;'>" . $people['name'] . "</b><br>";
+    echo "Position: " . $people['job'] . "<br>";
+    echo "Phone Number: " . $people['cell'] . "<hr>";
+};
 
 
 ?>
