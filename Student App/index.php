@@ -10,13 +10,30 @@
 </head>
 <body>
 	
-	
+	<?php
+	/**
+	 * Form Values Getting Process
+	 */
+	if (isset($_POST['submit'])) {
+		$name	= $_POST['name'];
+		$email	= $_POST['email'];
+		$cell	= $_POST['cell'];
+		$age	= $_POST['age'];
+
+		/**
+		 * File Upload Section
+		 */
+		$StudentPhoto	= $_Files['Photo'];
+
+	}
+
+	?>
 
 	<div class="wrap shadow">
 		<div class="card">
 			<div class="card-body">
 				<h2>Add new student</h2>
-				<form action="" method="POST">
+				<form action="" method="POST" enctype="multipart/form-data">
 					<div class="form-group">
 						<!-- <label for="">Name</label> -->
 						<input name="name" class="form-control" type="text" placeholder="Student Name">
@@ -38,7 +55,7 @@
 						<input name="photo" class="form-control" type="file" placeholder="Student Photo">
 					</div>
 					<div class="form-group">
-						<input name="add" class="btn btn-primary" type="submit" value="Sign Up">
+						<input name="submit" class="btn btn-primary" type="submit" value="Sign Up">
 					</div>
 				</form>
 			</div>
