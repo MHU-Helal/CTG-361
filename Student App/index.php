@@ -28,6 +28,17 @@
 		$tmp_name	= $photo['tmp_name'];
 		$file_size	= $photo['size'] / (1024*1024); //File size converted into MB!
 
+		/**
+		 * Form Empty Check
+		 * empty($name || $email || $cell || $age) (This code does not work!)
+		 * empty ($name && $email && $cell && $age) (This code works fine!)
+		 */
+		if (empty($name) || empty($email) || empty($cell) || empty($age)) {
+			$mess = '<p class="alert alert-danger">All fields are required! <button class="close" data-dismiss="alert">&times;</button> </p>';
+		}else{
+			$mess = '<p class="alert alert-success">Data submission successful! <button class="close" data-dismiss="alert">&times;</button> </p>';
+		}
+
 	}
 
 	?>
@@ -36,6 +47,14 @@
 		<div class="card">
 			<div class="card-body">
 				<h2>Add new student</h2>
+				<?php
+				/**
+				 * Fields Value related notification area
+				 */
+				if (isset($mess)) {
+					echo $mess;
+				}
+				?>
 				<form action="" method="POST" enctype="multipart/form-data">
 					<div class="form-group">
 						<!-- <label for="">Name</label> -->
