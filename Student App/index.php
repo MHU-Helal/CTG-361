@@ -16,7 +16,7 @@
 		<div class="card">
 			<div class="card-body">
 				<h2>Add new student</h2>
-				<form action="">
+				<form action="" method="POST">
 					<div class="form-group">
 						<!-- <label for="">Name</label> -->
 						<input name="name" class="form-control" type="text" placeholder="Student Name">
@@ -32,6 +32,10 @@
 					<div class="form-group">
 						<!-- <label for="">age</label> -->
 						<input name="age" class="form-control" type="text" placeholder="Age">
+					</div>
+					<div class="form-group">
+						<!-- <label for="">Student Photo</label> -->
+						<input name="photo" class="form-control" type="file" placeholder="Student Photo">
 					</div>
 					<div class="form-group">
 						<input name="add" class="btn btn-primary" type="submit" value="Sign Up">
