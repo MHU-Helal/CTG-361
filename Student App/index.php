@@ -19,11 +19,14 @@
 		$email	= $_POST['email'];
 		$cell	= $_POST['cell'];
 		$age	= $_POST['age'];
+		$photo	= $_FILES['photo'];
 
 		/**
 		 * File Upload Section
 		 */
-		$StudentPhoto	= $_Files['Photo'];
+		$file_name	= $photo['name'];
+		$tmp_name	= $photo['tmp_name'];
+		$file_size	= $photo['size'] / (1024*1024); //File size converted into MB!
 
 	}
 
